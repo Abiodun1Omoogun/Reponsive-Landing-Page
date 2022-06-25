@@ -9,20 +9,21 @@
 
 body{
     /* background-color: hsl(192, 100%, 96%); */
-    padding: 3em;
-    /* background-image: url("bg-hero-desktop.svg"); */
+    padding: 0px;
 }
 header{
     background-color: hsl(192, 100%, 96%);
     width: 100%;
+    font-family: "Open Sans";
     /* min-height: 100vh; */
     display: flex;
     justify-content: center;
+    background-image: url("bg-hero-desktop.svg");
     
 }
 
 .logo{
-    width: 60%;
+    width: 90%;
     margin: 20px;
 }
 
@@ -35,9 +36,12 @@ header img{
     color: hsl(192, 100%, 9%);
     background-color: rgb(242, 235, 235);
     margin: 0;
-    width: auto;
-    
+    width: 50%;
+    border-radius: 20px;
+    padding: 3px 12px;   
     float: right;
+    outline: none;
+    border-color: rgb(242, 235, 235);
 }
 
 /* .main{
@@ -85,7 +89,7 @@ header img{
 main{
     margin: 30px;
     padding: 40px;
-    background-color: #fff;
+    background-color: white;
     /* height: 100vh; */
     display: row;
     justify-content: center;
@@ -96,21 +100,21 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    border: 20px;
+    border: 1px solid lightgrey;
     border-radius: 30px;
     margin: 20px;
 }
 .container1 h3{
-    font-size: px;
+    font-size: 30px;
     color: hsl(192, 100%, 9%);
     font-family: "Open Sans";
 }
 .container1 p{
     padding: 2em 0em;
-    color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
     font-size: 18px;
     line-height: 25px;
-
+ 
 }
 .grow-together_img{
     width: 30%;
@@ -119,7 +123,7 @@ main{
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    border: 20px lightcyan;
+    border: 1px solid lightgrey;
     border-radius: 30px;
     margin: 20px;
 }
@@ -133,8 +137,8 @@ main{
 }
 .container2 p{
     padding: 2em 0em;
-    color: hsl(192, 100%, 9%);
-    font-size: 14px;
+    color:  hsl(208, 11%, 55%);
+    font-size: 18px;
     line-height: 25px;
 
 }    
@@ -142,33 +146,33 @@ main{
     display: flex;
     justify-content: center;
     padding: 40px;
-    border: 20px;
+    margin: 20px;
+    border: 1px solid lightgrey;
     border-radius: 30px;
 
 }
 .container3 h3{
-    font-size: 40px;
+    font-size: 60px;
     color: hsl(192, 100%, 9%);
-
 }
 .container3 p{
     padding: 10%;
-    color: hsl(192, 100%, 9%);
-    font-size: 14px;
+    color: hsl(208, 11%, 55%);
+    font-size: 18px;
     line-height: 25px;
     margin: 0;
-
-    
 }
 
 .your-users_img{
     width: 30%;
 }
-
+.container4 h3{
+    font-size: 30px;
+}
 .container4 button{
-    border: 0;
+    margin: 20px;
     padding: 15px 40px;
-    border: 0;
+    border: 80px;
     outline: none;
     background-color: hsl(322, 100%, 66%);
     color: #fff;
@@ -179,6 +183,11 @@ main{
 .container4{
     justify-content: center;
     text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    margin: 150px 195px 0px;
+    padding: 50px 70px 40px;
+    
     
    
 
@@ -190,6 +199,36 @@ footer{
     height: 90%;
     margin: 0;
 }
+footer.fab{
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.footer_left{
+    text-align: left;
+    display: list-item;
+}
+.footer_middle1{
+    display: flex;
+    margin: 4%;
+    padding-left: 25%;
+    flex-direction: column;   
+}
+.footer_middle2{
+    display: grid;
+    margin: 5%;
+    padding-left: 50%;
+}
+.footer_right{
+    display: list-item;
+    text-align: right;
+}
+.footer_bottom{
+    text-align: end;
+}
 
 
 
@@ -202,18 +241,16 @@ footer{
 
 
 
+/* mobile screen sizes */
 
-
-
-
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 600px) {
     header{
-        background-image: url("bg-hero-destop.svg");
+        background-image: url("bg-hero-mobile.svg");
     }
 
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 992px) {
     header{
         background-image: url("bg-hero-mobile.svg");
     }
